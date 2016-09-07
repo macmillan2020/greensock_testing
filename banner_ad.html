@@ -5,7 +5,7 @@
 		<title>GSAP animation</title>
 		<style type="text/css">
 			@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
-			body ( padding: 30px; font-family: 'Open Sans', sans-serif; }
+			body { padding: 30px; font-family: 'Open Sans', sans-serif; }
 			
 			#myAdLink{
 				display: inline-block;
@@ -76,6 +76,7 @@
 			}
 		</style>
 	</head>
+
 	<body>
 		<a id="myAdLink" href="http://www.erinmacmillan.com">
 			<div id="myAd">
@@ -85,7 +86,7 @@
 				<div id="myAd_txt1">Feeling stressed?</div>
 				<div id="myAd_txt2">You could be here!</div>
 				<div id="myAd_shadow" class="myAd_Img"></div>
-				<div id="myAd_txt3" class="myAd_Img"></div>
+				<div id="myAd_txt3"></div>
 				<div id="myAd_marker" class="myAd_Img"></div>
 				<div id="myAd_surfboard" class="myAd_Img"></div>
 			</div>
@@ -98,9 +99,9 @@
 				var tl1 = new TimelineMax();
 
 				//".from" will take the current position of the heading an move it from the defined postition to a destination
-				tl1.from('#myAd_txt1', 1.3, { top: -100 });
+				tl1.from('#myAd_txt2', 1.3, { top: -100 });
 			}());
 
 		</script>
-	</body>
+	<!-- </body> -->
 </html>
